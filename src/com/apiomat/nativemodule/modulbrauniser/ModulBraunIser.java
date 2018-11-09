@@ -54,7 +54,15 @@ public class ModulBraunIser implements com.apiomat.nativemodule.IModule
     //
     // Read @NativeModuleConfig values using the following code:
     // ModulBraunIser.APP_CONFIG_PROXY.getConfigValue( ModulBraunIser.HOSTNAME, appName, system );
-
+    @com.apiomat.nativemodule.NativeModuleConfig(
+            datatype = Type.TEXT,
+        	example = "Lidl",
+        	title = "Company name",
+        	info = "Company name",
+        	defaultValue = "Lidl",
+        	notifyAllNodes = true,
+        	order = 1 )
+    public static String CNAME = "ModulBraunIser_companyName";
     /**
      * This method gets called once in the cluster when the module is uploaded.
      */
