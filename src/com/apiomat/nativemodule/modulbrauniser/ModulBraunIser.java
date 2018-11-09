@@ -24,6 +24,7 @@
  */
 package com.apiomat.nativemodule.modulbrauniser;
 
+import com.apiomat.nativemodule.NativeModuleConfig.Type;
 
 /**
  * Generated class for starting and stopping your module. 
