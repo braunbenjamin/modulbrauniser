@@ -29,7 +29,7 @@ import com.apiomat.nativemodule.*;
 import com.apiomat.nativemodule.basics.User;
 
 import com.apiomat.nativemodule.modulbrauniser.*;
-import com.apiomat.nativemodule.salesmodule1.SalesModule1;
+
 
 /**
 * Generated class for hooks on your Referent data model
