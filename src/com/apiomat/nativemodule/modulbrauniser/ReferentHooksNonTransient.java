@@ -23,10 +23,13 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 package com.apiomat.nativemodule.modulbrauniser;
+import java.util.Date;
+
 import com.apiomat.nativemodule.*;
 import com.apiomat.nativemodule.basics.User;
 
 import com.apiomat.nativemodule.modulbrauniser.*;
+import com.apiomat.nativemodule.salesmodule1.SalesModule1;
 
 /**
 * Generated class for hooks on your Referent data model
@@ -50,6 +53,9 @@ public class ReferentHooksNonTransient<T extends com.apiomat.nativemodule.modulb
     @Override
     public void beforePost( com.apiomat.nativemodule.modulbrauniser.Referent obj, com.apiomat.nativemodule.Request r )
     {
+    	
+    	String companyName = (String) ModulBraunIser.APP_CONFIG_PROXY.getConfigValue( ModulBraunIser.CNAME, r.getApplicationName(), r.getSystem() ); 
+    	obj.setCompanyName(String.valueOf(companyName));
     }
 
 
